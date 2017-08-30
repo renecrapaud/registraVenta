@@ -2,13 +2,7 @@
 /node_modules
 Homestead.yaml
 Homestead.json
-.env
 composer.lock
+.env
 /nbproject/private/
 nbproject/
-public/download/*.csv
-public/download/*
-public/download
-/public/download
-/public/download/
-/public/cartas

@@ -79,7 +79,20 @@
       <p>Seleccione la categoría, anote la cantidad y oprima registrar.</p>
       <hr>
       <h3>Categorias</h3>
-      <p>Seleccione</p>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categoria
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <label for="cantidad">Cantidad:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+      <button type="button" class="btn btn-primary">Registrar</button>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
