@@ -70,9 +70,7 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Liga 1</a></p>
-      <p><a href="#">Liga 2</a></p>
-      <p><a href="#">Liga 3</a></p>
+      <p>Fecha: dd/mm/aaaa</p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Ventas</h1>
