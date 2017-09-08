@@ -41,7 +41,7 @@
         </div>
         <div class="col-sm-6 col-xs-6">
           <br>
-          <button type="submit" class="btn btn-primary">Registrar</button>
+          <button id="btnRegistra" type="submit" class="btn btn-primary" onclick="compruebaDato()">Registrar</button>
         </div>
       </div>
       </form>
@@ -53,5 +53,13 @@
     </div>
   </div>
 </div>
-
+<script>
+    function compruebaDato(){
+        var precio = document.getElementById('precio').value;
+        if(isNaN(precio) || precio == ''){
+            event.preventDefault();
+            alert('Indique la cantidad');
+        }
+    }
+</script>
 @endsection

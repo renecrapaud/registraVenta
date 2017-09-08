@@ -15,10 +15,11 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
     public function registraIngreso(Request $request){
-        /*$input = $request->all();
-        echo $input;*/
-        $nombre = $request->input('precio');
-        echo $nombre;
-        return view('welcome');
+        $registro = new Ingreso();
+        $registro->fecha = date_format(date_create('now'), 'Y-m-d');
+        $registro->cantidad = $request->input('precio');
+        $registro->categoria = $request->input('categoria');
+        $registro->save();
+        return redirect('/');
     }
 }
